@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contracts</title>
+<title>Contracts — CorpTeam</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
 <style>
@@ -14,23 +14,18 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .app.dark{--bg1:#1c1c1e;--bg2:#2c2c2e;--bg3:#3a3a3c;--txt1:#f0f0f0;--txt2:#aaa;--txt3:#666;--bdr:#3a3a3c;--bdr2:#555;--accent:#85B7EB;--abg:#1e3a5f;--atxt:#85B7EB;background:#1c1c1e;color:#f0f0f0}
 .topbar{display:flex;align-items:center;gap:10px;padding:11px 16px;border-bottom:0.5px solid var(--bdr);background:var(--bg1);flex-shrink:0}
 .logo{font-size:15px;font-weight:600;color:var(--txt1);display:flex;align-items:center;gap:7px}
-.sw{position:relative;flex:1}
-.sw i{position:absolute;left:9px;top:50%;transform:translateY(-50%);font-size:14px;color:var(--txt3);pointer-events:none}
+.sw{position:relative;flex:1}.sw i{position:absolute;left:9px;top:50%;transform:translateY(-50%);font-size:14px;color:var(--txt3);pointer-events:none}
 .sinp{width:100%;padding:7px 10px 7px 30px;border:0.5px solid var(--bdr);border-radius:8px;background:var(--bg2);color:var(--txt1);font-size:13px;outline:none;font-family:inherit}
-.sinp:focus{border-color:var(--accent)}
-.sinp::placeholder{color:var(--txt3)}
+.sinp:focus{border-color:var(--accent)}.sinp::placeholder{color:var(--txt3)}
 .tog{width:40px;height:22px;border-radius:11px;border:none;cursor:pointer;display:flex;align-items:center;padding:2px;transition:background .25s}
-.app.light .tog{background:#d1d1d6}
-.app.dark .tog{background:#378ADD}
+.app.light .tog{background:#d1d1d6}.app.dark .tog{background:#378ADD}
 .thumb{width:18px;height:18px;border-radius:50%;background:#fff;transition:transform .25s}
-.app.light .thumb{transform:translateX(0)}
-.app.dark .thumb{transform:translateX(18px)}
+.app.light .thumb{transform:translateX(0)}.app.dark .thumb{transform:translateX(18px)}
 .body{display:flex;flex:1;overflow:hidden}
 .left{width:175px;min-width:175px;border-right:0.5px solid var(--bdr);background:var(--bg2);display:flex;flex-direction:column;padding:12px 8px;gap:2px;overflow-y:auto}
 .lhd{font-size:10px;font-weight:600;color:var(--txt3);text-transform:uppercase;letter-spacing:.07em;padding:2px 8px 10px}
 .ltab{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;cursor:pointer;font-size:13px;color:var(--txt2);border:none;background:none;text-align:left;width:100%;font-family:inherit}
-.ltab:hover{background:var(--bg3);color:var(--txt1)}
-.ltab.active{background:var(--abg);color:var(--atxt);font-weight:500}
+.ltab:hover{background:var(--bg3);color:var(--txt1)}.ltab.active{background:var(--abg);color:var(--atxt);font-weight:500}
 .ltab i{font-size:16px;flex-shrink:0}
 .lbadge{margin-left:auto;font-size:11px;background:var(--bg3);color:var(--txt3);border-radius:10px;padding:1px 7px}
 .ltab.active .lbadge{background:var(--abg);color:var(--atxt);border:0.5px solid var(--accent)}
@@ -40,10 +35,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .midtop{padding:10px 16px;border-bottom:0.5px solid var(--bdr);display:flex;align-items:center;gap:8px;flex-wrap:wrap;flex-shrink:0}
 .mttitle{font-size:14px;font-weight:600;color:var(--txt1);flex:1}
 .btn{background:none;border:0.5px solid var(--bdr2);border-radius:7px;padding:6px 12px;font-size:12px;color:var(--txt2);cursor:pointer;display:flex;align-items:center;gap:5px;font-family:inherit;white-space:nowrap}
-.btn:hover{background:var(--bg2);color:var(--txt1)}
-.btn.primary{background:var(--abg);color:var(--atxt);border-color:var(--accent)}
-.btn.primary:hover{opacity:.85}
-.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn:hover{background:var(--bg2);color:var(--txt1)}.btn.primary{background:var(--abg);color:var(--atxt);border-color:var(--accent)}.btn.primary:hover{opacity:.85}.btn:disabled{opacity:.45;cursor:not-allowed}
 .tblhd{display:grid;grid-template-columns:2fr 1.3fr 1fr 1fr 100px;padding:7px 16px;border-bottom:0.5px solid var(--bdr);background:var(--bg2);flex-shrink:0}
 .th{font-size:11px;font-weight:600;color:var(--txt3);text-transform:uppercase;letter-spacing:.05em}
 .tblbody{flex:1;overflow-y:auto}
@@ -52,55 +44,46 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .cname{font-size:13px;color:var(--txt1);font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:flex;align-items:center;gap:7px;min-width:0}
 .cname span.nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .type-badge{font-size:10px;padding:2px 7px;border-radius:10px;font-weight:600;flex-shrink:0}
-.third-badge{background:#FAEEDA;color:#854F0B}
-.app.dark .third-badge{background:#412402;color:#FAC775}
-.our-badge{background:#EFF6FF;color:#185FA5}
-.app.dark .our-badge{background:#1e3a5f;color:#85B7EB}
+.third-badge{background:#FAEEDA;color:#854F0B}.app.dark .third-badge{background:#412402;color:#FAC775}
+.our-badge{background:#EFF6FF;color:#185FA5}.app.dark .our-badge{background:#1e3a5f;color:#85B7EB}
 .cmeta{font-size:12px;color:var(--txt2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding-right:6px}
 .cdate{font-size:12px;color:var(--txt3)}
 .pill{font-size:11px;padding:3px 9px;border-radius:10px;font-weight:500}
-.pill.review{background:#FAEEDA;color:#854F0B}
-.pill.draft{background:#E1F5EE;color:#0F6E56}
-.pill.executed{background:#EAF3DE;color:#3B6D11}
-.app.dark .pill.review{background:#412402;color:#FAC775}
-.app.dark .pill.draft{background:#04342C;color:#9FE1CB}
-.app.dark .pill.executed{background:#173404;color:#C0DD97}
+.pill.review{background:#FAEEDA;color:#854F0B}.pill.draft{background:#E1F5EE;color:#0F6E56}.pill.executed{background:#EAF3DE;color:#3B6D11}
+.app.dark .pill.review{background:#412402;color:#FAC775}.app.dark .pill.draft{background:#04342C;color:#9FE1CB}.app.dark .pill.executed{background:#173404;color:#C0DD97}
 .crow-actions{display:flex;gap:3px;justify-content:flex-end;align-items:center}
 .iab{background:none;border:none;cursor:pointer;color:var(--txt3);font-size:14px;padding:3px 4px;border-radius:4px;display:flex;align-items:center}
-.iab:hover{color:var(--txt1);background:var(--bg3)}
-.iab.green{color:#3B6D11}
-.iab.red{color:#A32D2D}
+.iab:hover{color:var(--txt1);background:var(--bg3)}.iab.green{color:#3B6D11}.iab.red{color:#A32D2D}
 .empty{padding:56px 20px;text-align:center;color:var(--txt3);font-size:13px;display:flex;flex-direction:column;align-items:center;gap:12px}
 .empty i{font-size:32px}
 .right{width:0;overflow:hidden;border-left:0.5px solid var(--bdr);background:var(--bg2);transition:width .2s;display:flex;flex-direction:column;flex-shrink:0}
 .right.open{width:230px;min-width:230px}
 .rhd{padding:10px 14px;border-bottom:0.5px solid var(--bdr);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
 .rhd span{font-size:13px;font-weight:500;color:var(--txt1)}
-.xbtn{background:none;border:none;cursor:pointer;color:var(--txt3);font-size:15px}
-.xbtn:hover{color:var(--txt1)}
+.xbtn{background:none;border:none;cursor:pointer;color:var(--txt3);font-size:15px}.xbtn:hover{color:var(--txt1)}
 .rbody{padding:14px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;flex:1}
 .rfield{display:flex;flex-direction:column;gap:3px}
 .rlbl{font-size:11px;color:var(--txt3);font-weight:500;text-transform:uppercase;letter-spacing:.04em}
-.rval{font-size:13px;color:var(--txt1)}
-.rval.ev{color:var(--txt3);font-style:italic}
+.rval{font-size:13px;color:var(--txt1)}.rval.ev{color:var(--txt3);font-style:italic}
 .rdiv{height:0.5px;background:var(--bdr)}
 .rfooter{padding:12px 14px;border-top:0.5px solid var(--bdr);display:flex;flex-direction:column;gap:6px;flex-shrink:0}
 .statusbar{padding:7px 16px;border-top:0.5px solid var(--bdr);display:flex;align-items:center;gap:12px;font-size:11px;color:var(--txt3);background:var(--bg2);flex-shrink:0}
 .dot{width:5px;height:5px;border-radius:50%;background:#1D9E75;display:inline-block;margin-right:4px}
 .modal-wrap{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:200;align-items:center;justify-content:center;padding:20px}
 .modal-wrap.show{display:flex}
-.modal{background:var(--bg1);border-radius:12px;border:0.5px solid var(--bdr);width:100%;max-width:500px;max-height:88vh;overflow:hidden;display:flex;flex-direction:column}
+.modal{background:var(--bg1);border-radius:12px;border:0.5px solid var(--bdr);width:100%;max-width:520px;max-height:90vh;overflow:hidden;display:flex;flex-direction:column}
 .mhd{padding:14px 16px;border-bottom:0.5px solid var(--bdr);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
 .mhd h2{font-size:15px;font-weight:500;color:var(--txt1)}
 .mbody{padding:16px;overflow-y:auto;display:flex;flex-direction:column;gap:13px;flex:1}
 .mft{padding:12px 16px;border-top:0.5px solid var(--bdr);display:flex;gap:8px;justify-content:flex-end;flex-shrink:0}
 .fg{display:flex;flex-direction:column;gap:5px}
 .fg label{font-size:12px;font-weight:500;color:var(--txt2)}
-.fg input,.fg select{padding:7px 10px;border:0.5px solid var(--bdr2);border-radius:7px;background:var(--bg2);color:var(--txt1);font-size:13px;outline:none;font-family:inherit;width:100%}
-.fg input:focus,.fg select:focus{border-color:var(--accent)}
+.fg input,.fg select,.fg textarea{padding:7px 10px;border:0.5px solid var(--bdr2);border-radius:7px;background:var(--bg2);color:var(--txt1);font-size:13px;outline:none;font-family:inherit;width:100%}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--accent)}
+.fg textarea{resize:vertical;min-height:60px}
+.frow2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .uz{border:1.5px dashed var(--bdr2);border-radius:8px;padding:20px;text-align:center;cursor:pointer;color:var(--txt3);font-size:13px;display:flex;flex-direction:column;align-items:center;gap:7px;transition:border-color .15s}
-.uz:hover{border-color:var(--accent);color:var(--atxt)}
-.uz.done{border-color:#1D9E75;color:#0F6E56;background:#E1F5EE}
+.uz:hover{border-color:var(--accent);color:var(--atxt)}.uz.done{border-color:#1D9E75;color:#0F6E56;background:#E1F5EE}
 .app.dark .uz.done{background:#04342C;color:#9FE1CB;border-color:#1D9E75}
 .uz i{font-size:24px}
 .banner{border-radius:8px;padding:9px 12px;font-size:12px;display:flex;align-items:center;gap:8px}
@@ -110,15 +93,16 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .banner i{font-size:16px;flex-shrink:0}
 .spin{width:14px;height:14px;border:2px solid var(--abg);border-top-color:var(--accent);border-radius:50%;animation:sp .7s linear infinite;flex-shrink:0;display:inline-block}
 @keyframes sp{to{transform:rotate(360deg)}}
-.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#1a1a1a;color:#fff;padding:10px 20px;border-radius:8px;font-size:13px;z-index:999;opacity:0;transition:opacity .3s;pointer-events:none}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#1a1a1a;color:#fff;padding:10px 20px;border-radius:8px;font-size:13px;z-index:999;opacity:0;transition:opacity .3s;pointer-events:none;white-space:nowrap}
 .toast.show{opacity:1}
+.section-title{font-size:11px;font-weight:600;color:var(--txt3);text-transform:uppercase;letter-spacing:.06em;padding-bottom:4px;border-bottom:0.5px solid var(--bdr);margin-bottom:2px}
 </style>
 </head>
 <body>
 <div class="toast" id="toast"></div>
 <div class="app light" id="app">
   <div class="topbar">
-    <span class="logo"><i class="ti ti-writing" aria-hidden="true"></i> Contracts</span>
+    <span class="logo"><i class="ti ti-writing" aria-hidden="true"></i> CorpTeam Contracts</span>
     <div class="sw"><i class="ti ti-search" aria-hidden="true"></i><input class="sinp" type="text" placeholder="Search contracts..." id="searchInp" oninput="onSearch()"></div>
     <button class="tog" onclick="toggleDark()" aria-label="Toggle dark mode"><div class="thumb"></div></button>
     <i class="ti ti-moon" style="font-size:15px;color:var(--txt3)" aria-hidden="true"></i>
@@ -131,13 +115,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       <div class="ldivider"></div>
       <div class="lsec">New contract</div>
       <button class="ltab" onclick="openThird()"><i class="ti ti-upload" aria-hidden="true"></i>Third party paper</button>
-      <button class="ltab" onclick="openOur()"><i class="ti ti-file-plus" aria-hidden="true"></i>Our paper</button>
+      <button class="ltab" onclick="openOur()"><i class="ti ti-file-plus" aria-hidden="true"></i>Our paper (NDA)</button>
     </div>
     <div class="mid">
       <div class="midtop">
         <span class="mttitle" id="viewTitle">In progress</span>
         <button class="btn" onclick="openThird()"><i class="ti ti-upload"></i> Upload third party</button>
-        <button class="btn primary" onclick="openOur()"><i class="ti ti-file-plus"></i> New from template</button>
+        <button class="btn primary" onclick="openOur()"><i class="ti ti-file-plus"></i> New NDA from template</button>
       </div>
       <div class="tblhd">
         <div class="th">Contract name</div>
@@ -166,20 +150,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 </div>
 
 <script>
-const S={dark:false,view:'ip',search:'',selId:null,nextId:10,editId:null,uploadedFileName:null,uploadedFileData:null,
+const S={dark:false,view:'ip',search:'',selId:null,nextId:10,uploadedFileName:null,
   contracts:[
-    {id:1,name:'Acme Corp MSA',type:'third',counterparty:'Acme Corp',signer:'Jane Smith',effective:'2024-03-01',termination:'2026-03-01',govLaw:'New York',status:'review',executed:false,file:'Acme_MSA.pdf',fileData:null},
-    {id:2,name:'Vendor NDA — TechCo',type:'our',counterparty:'TechCo Inc.',signer:'Bob Lee',effective:'2024-06-01',termination:'2025-06-01',govLaw:'Delaware',status:'draft',executed:false,file:'NDA_Template.docx',fileData:null},
-    {id:3,name:'Supplier Agreement — GlobalParts',type:'third',counterparty:'GlobalParts Ltd.',signer:'Maria Santos',effective:'2023-01-15',termination:'2025-01-15',govLaw:'California',status:'executed',executed:true,file:'GlobalParts_Agreement.pdf',fileData:null},
+    {id:1,name:'Acme Corp NDA',type:'our',counterparty:'Acme Corp',signer:'Jane Smith',signerTitle:'VP Legal',signerEmail:'jane@acme.com',counterpartyAddress:'123 Main St, New York, NY 10001',effective:'2024-03-01',termination:'2029-03-01',govLaw:'Delaware',status:'review',executed:false,file:null,corpSig:'Trevor Dutcher'},
+    {id:2,name:'TechCo Mutual NDA',type:'third',counterparty:'TechCo Inc.',signer:'Bob Lee',signerTitle:'CEO',signerEmail:'bob@techco.com',counterpartyAddress:'456 Market St, San Francisco, CA 94105',effective:'2024-06-01',termination:'2029-06-01',govLaw:'California',status:'draft',executed:false,file:'TechCo_NDA.pdf',corpSig:'Trevor Dutcher'},
+    {id:3,name:'GlobalParts NDA',type:'third',counterparty:'GlobalParts Ltd.',signer:'Maria Santos',signerTitle:'Director',signerEmail:'maria@globalparts.com',counterpartyAddress:'789 Trade Ave, Chicago, IL 60601',effective:'2023-01-15',termination:'2028-01-15',govLaw:'New York',status:'executed',executed:true,file:'GlobalParts_NDA.pdf',corpSig:'Trevor Dutcher'},
   ]
 };
 
 function toggleDark(){S.dark=!S.dark;document.getElementById('app').className='app '+(S.dark?'dark':'light');}
 function setView(v){S.view=v;S.selId=null;closeDetail();render();}
 function onSearch(){S.search=document.getElementById('searchInp').value.toLowerCase();render();}
-function today(){return new Date().toISOString().slice(0,10);}
 function fmtDate(d){if(!d)return'—';const[y,m,day]=d.split('-');return['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][parseInt(m)-1]+' '+parseInt(day)+', '+y;}
-function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2800);}
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000);}
 
 function render(){
   ['ip','repo'].forEach(v=>{
@@ -202,10 +185,8 @@ function renderTable(){
   rows.forEach(c=>{
     const row=document.createElement('div');row.className='crow';
     row.style.background=S.selId===c.id?'var(--bg2)':'';
-    const tb=c.type==='third'?'<span class="type-badge third-badge">3rd party</span>':'<span class="type-badge our-badge">Our paper</span>';
+    const tb=c.type==='third'?'<span class="type-badge third-badge">3rd party</span>':'<span class="type-badge our-badge">NDA</span>';
     const inRepo=c.executed;
-    const dlTip=inRepo?'Download PDF':'Download Word';
-    const dlIcon=inRepo?'ti-file-type-pdf':'ti-file-type-doc';
     row.innerHTML=`
       <div class="cname">${tb}<span class="nm" title="${c.name}">${c.name}</span></div>
       <div class="cmeta">${c.counterparty||'—'}</div>
@@ -213,7 +194,7 @@ function renderTable(){
       <div><span class="pill ${c.status}">${c.status==='review'?'Under review':c.status==='draft'?'Draft':'Executed'}</span></div>
       <div class="crow-actions">
         <button class="iab" title="Details" onclick="openDetail(${c.id},event)"><i class="ti ti-info-circle"></i></button>
-        <button class="iab" title="${dlTip}" onclick="downloadContract(${c.id},event)"><i class="ti ${dlIcon}"></i></button>
+        <button class="iab" title="${inRepo?'Download PDF':'Download Word'}" onclick="downloadContract(${c.id},event)"><i class="ti ${inRepo?'ti-file-type-pdf':'ti-file-type-doc'}"></i></button>
         ${!inRepo?`<button class="iab green" title="Mark as executed" onclick="markExecuted(${c.id},event)"><i class="ti ti-circle-check"></i></button>`:`<button class="iab" title="Read-only" style="cursor:default;opacity:.4"><i class="ti ti-lock"></i></button>`}
         <button class="iab red" title="Delete" onclick="delContract(${c.id},event)"><i class="ti ti-trash"></i></button>
       </div>`;
@@ -223,143 +204,86 @@ function renderTable(){
   document.getElementById('statTxt').textContent=`${rows.length} contract${rows.length!==1?'s':''}`;
 }
 
-function openDetail(id,e){e&&e.stopPropagation();S.selId=id;
+function openDetail(id,e){
+  e&&e.stopPropagation();S.selId=id;
   const c=S.contracts.find(x=>x.id===id);if(!c)return;
   document.getElementById('rightPane').classList.add('open');
-  const pairs=[['Type',c.type==='third'?'Third party paper':'Our paper'],['Status',c.status==='review'?'Under review':c.status==='draft'?'Draft':'Executed'],
-    ['Counterparty',c.counterparty],['Signer',c.signer],['Effective date',fmtDate(c.effective)],
-    ['Termination date',fmtDate(c.termination)],['Governing law',c.govLaw],['File',c.file]];
+  const pairs=[
+    ['Type',c.type==='third'?'Third party paper':'Our paper (NDA)'],
+    ['Status',c.status==='review'?'Under review':c.status==='draft'?'Draft':'Executed'],
+    ['Counterparty',c.counterparty],
+    ['Signer name',c.signer],
+    ['Signer title',c.signerTitle],
+    ['Signer email',c.signerEmail],
+    ['Counterparty address',c.counterpartyAddress],
+    ['Effective date',fmtDate(c.effective)],
+    ['Termination date',fmtDate(c.termination)],
+    ['Governing law',c.govLaw],
+    ['CorpTeam signatory',c.corpSig||'Trevor Dutcher'],
+    ['File',c.file],
+  ];
   document.getElementById('rBody').innerHTML=pairs.map(([l,v])=>`<div class="rfield"><div class="rlbl">${l}</div><div class="rval${!v?' ev':''}">${v||'Not provided'}</div></div><div class="rdiv"></div>`).join('');
-  const ft=document.getElementById('rFooter');ft.innerHTML='';
+  const ft=document.getElementById('rFooter');
   if(c.executed){
-    ft.innerHTML=`
-      <div style="font-size:11px;color:var(--txt3);display:flex;align-items:center;gap:5px;margin-bottom:4px"><i class="ti ti-lock" style="font-size:13px"></i> Read-only — executed</div>
+    ft.innerHTML=`<div style="font-size:11px;color:var(--txt3);display:flex;align-items:center;gap:5px;margin-bottom:4px"><i class="ti ti-lock" style="font-size:13px"></i> Read-only — executed</div>
       <button class="btn primary" style="width:100%;justify-content:center" onclick="downloadContract(${c.id})"><i class="ti ti-file-type-pdf"></i> Download PDF</button>`;
   } else {
-    ft.innerHTML=`
-      <button class="btn" style="width:100%;justify-content:center;margin-bottom:4px" onclick="editIntake(${c.id})"><i class="ti ti-pencil"></i> Edit details</button>
+    ft.innerHTML=`<button class="btn" style="width:100%;justify-content:center;margin-bottom:4px" onclick="editIntake(${c.id})"><i class="ti ti-pencil"></i> Edit details</button>
       <button class="btn primary" style="width:100%;justify-content:center" onclick="downloadContract(${c.id})"><i class="ti ti-file-type-doc"></i> Download Word</button>`;
   }
   render();
 }
+
 function closeDetail(){S.selId=null;document.getElementById('rightPane').classList.remove('open');render();}
 function markExecuted(id,e){e&&e.stopPropagation();const c=S.contracts.find(x=>x.id===id);if(c){c.executed=true;c.status='executed';}if(S.selId===id)openDetail(id);render();showToast('Contract moved to Repository');}
 function delContract(id,e){e&&e.stopPropagation();if(!confirm('Delete this contract?'))return;S.contracts=S.contracts.filter(x=>x.id!==id);if(S.selId===id)closeDetail();render();}
 
-async function downloadContract(id,e){
-  e&&e.stopPropagation();
-  const c=S.contracts.find(x=>x.id===id);if(!c)return;
-  if(c.executed){
-    generatePDF(c);
-  } else {
-    await generateWord(c);
-  }
-}
-
-function generatePDF(c){
-  const content=buildContractText(c);
-  const html=`<!DOCTYPE html><html><head><meta charset="UTF-8"><title>${c.name}</title>
-  <style>body{font-family:Georgia,serif;max-width:700px;margin:40px auto;padding:0 40px;color:#1a1a1a;line-height:1.7}
-  h1{font-size:20px;margin-bottom:8px}h2{font-size:14px;color:#555;margin-bottom:24px;font-weight:400}
-  .meta{background:#f9f9f9;border:1px solid #e5e5e5;border-radius:8px;padding:20px 24px;margin-bottom:28px}
-  .meta table{width:100%;border-collapse:collapse}.meta td{padding:5px 0;font-size:13px}
-  .meta td:first-child{color:#777;width:140px;font-weight:500}
-  .badge{display:inline-block;background:#EAF3DE;color:#3B6D11;font-size:11px;padding:2px 10px;border-radius:10px;font-weight:600;margin-bottom:16px}
-  .body-text{font-size:14px;white-space:pre-line}
-  .footer{margin-top:48px;padding-top:16px;border-top:1px solid #e5e5e5;font-size:11px;color:#999;text-align:center}
-  </style></head><body>
-  <h1>${c.name}</h1><h2>${c.type==='third'?'Third Party Contract':'Contract — Our Paper'}</h2>
-  <span class="badge">Executed</span>
-  <div class="meta"><table>
-  <tr><td>Counterparty</td><td>${c.counterparty||'—'}</td></tr>
-  <tr><td>Signer</td><td>${c.signer||'—'}</td></tr>
-  <tr><td>Effective date</td><td>${fmtDate(c.effective)}</td></tr>
-  <tr><td>Termination date</td><td>${fmtDate(c.termination)}</td></tr>
-  <tr><td>Governing law</td><td>${c.govLaw||'—'}</td></tr>
-  <tr><td>Original file</td><td>${c.file||'—'}</td></tr>
-  </table></div>
-  <div class="body-text">${content}</div>
-  <div class="footer">Generated ${new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})} &mdash; Contracts Dashboard</div>
-  </body></html>`;
-  const w=window.open('','_blank');
-  w.document.write(html);w.document.close();
-  setTimeout(()=>{w.focus();w.print();},600);
-  showToast('PDF ready — use your browser\'s print dialog to save');
-}
-
-function buildContractText(c){
-  if(c.type==='third'){
-    return `This document is a record of a third party contract uploaded for review.\n\nThe original file "${c.file||'[file]'}" was uploaded and reviewed. The key terms extracted and confirmed are recorded in the metadata above.\n\nThis record was generated by the Contracts Dashboard.`;
-  }
-  return `CONTRACT AGREEMENT\n\nThis Agreement ("Agreement") is entered into as of ${fmtDate(c.effective)} ("Effective Date") by and between the undersigned parties.\n\nPARTIES\n\nCounterparty: ${c.counterparty||'[Counterparty Name]'}\nAuthorised Signatory: ${c.signer||'[Signer Name]'}\n\nTERM\n\nThis Agreement shall commence on the Effective Date of ${fmtDate(c.effective)} and shall continue until ${fmtDate(c.termination)}, unless earlier terminated in accordance with the terms herein.\n\nGOVERNING LAW\n\nThis Agreement shall be governed by and construed in accordance with the laws of ${c.govLaw||'[Governing Law]'}, without regard to its conflict of law provisions.\n\nENTIRE AGREEMENT\n\nThis Agreement constitutes the entire agreement between the parties with respect to the subject matter hereof and supersedes all prior agreements, understandings, negotiations, and discussions, whether oral or written, of the parties.\n\nIN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above.\n\n_______________________________\nAuthorised Signatory\n${c.signer||'[Signer Name]'}\n${c.counterparty||'[Counterparty]'}\n\nDate: ____________________________`;
-}
-
-async function generateWord(c){
-  if(typeof docx==='undefined'){showToast('Word library not loaded — please check your connection');return;}
-  try{
-    const {Document,Packer,Paragraph,TextRun,HeadingLevel,AlignmentType,Table,TableRow,TableCell,WidthType,BorderStyle}=docx;
-    const metaRows=[
-      ['Counterparty',c.counterparty||'—'],['Counterparty signer',c.signer||'—'],
-      ['Effective date',fmtDate(c.effective)],['Termination date',fmtDate(c.termination)],
-      ['Governing law',c.govLaw||'—'],['Document type',c.type==='third'?'Third party paper':'Our paper'],
-      ['Original file',c.file||'—'],['Status',c.status==='review'?'Under review':'Draft'],
-    ];
-    const tableRows=metaRows.map(([l,v])=>new TableRow({children:[
-      new TableCell({children:[new Paragraph({children:[new TextRun({text:l,bold:true,size:20,color:'555555'})]})],
-        width:{size:35,type:WidthType.PERCENTAGE},borders:{top:{style:BorderStyle.NONE},bottom:{style:BorderStyle.NONE},left:{style:BorderStyle.NONE},right:{style:BorderStyle.NONE}}}),
-      new TableCell({children:[new Paragraph({children:[new TextRun({text:v,size:20})]})],
-        width:{size:65,type:WidthType.PERCENTAGE},borders:{top:{style:BorderStyle.NONE},bottom:{style:BorderStyle.NONE},left:{style:BorderStyle.NONE},right:{style:BorderStyle.NONE}}}),
-    ]}));
-    const bodyParas=buildContractText(c).split('\n').map(line=>
-      new Paragraph({children:[new TextRun({text:line,size:24})],spacing:{after:line===''?100:200}})
-    );
-    const doc=new Document({sections:[{properties:{},children:[
-      new Paragraph({children:[new TextRun({text:c.name,bold:true,size:36})],heading:HeadingLevel.TITLE,spacing:{after:200}}),
-      new Paragraph({children:[new TextRun({text:c.type==='third'?'Third Party Contract':'Contract — Our Paper',size:24,color:'777777'})],spacing:{after:400}}),
-      new Paragraph({children:[new TextRun({text:'Contract Metadata',bold:true,size:24})],spacing:{after:200}}),
-      new Table({rows:tableRows,width:{size:100,type:WidthType.PERCENTAGE}}),
-      new Paragraph({children:[],spacing:{after:400}}),
-      new Paragraph({children:[new TextRun({text:'Contract Terms',bold:true,size:24})],spacing:{after:200}}),
-      ...bodyParas,
-      new Paragraph({children:[],spacing:{after:400}}),
-      new Paragraph({children:[new TextRun({text:`Generated ${new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})} — Contracts Dashboard`,size:18,color:'999999'})],alignment:AlignmentType.CENTER}),
-    ]}]});
-    const blob=await Packer.toBlob(doc);
-    const url=URL.createObjectURL(blob);
-    const a=document.createElement('a');a.href=url;a.download=c.name.replace(/[^a-z0-9]/gi,'_')+'.docx';
-    document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);
-    showToast('Word document downloaded');
-  } catch(err){console.error(err);showToast('Download failed — please try again');}
-}
-
-function intakeFields(d={}){
+// ── INTAKE FORM HTML ──────────────────────────────────────────────
+function intakeHTML(d={}){
   return `
-    <div class="fg"><label>Counterparty name</label><input type="text" id="f_cp" placeholder="e.g. Acme Corp" value="${d.counterparty||''}"></div>
-    <div class="fg"><label>Counterparty signer name</label><input type="text" id="f_signer" placeholder="e.g. Jane Smith" value="${d.signer||''}"></div>
-    <div class="fg"><label>Effective date</label><input type="date" id="f_eff" value="${d.effective||''}"></div>
-    <div class="fg"><label>Termination date</label><input type="date" id="f_term" value="${d.termination||''}"></div>
-    <div class="fg"><label>Governing law</label><input type="text" id="f_gov" placeholder="e.g. Delaware" value="${d.govLaw||''}"></div>
-    <div class="fg"><label>Contract name</label><input type="text" id="f_name" placeholder="e.g. Vendor NDA — Acme Corp" value="${d.name||''}"></div>
+    <div class="section-title">Counterparty details</div>
+    <div class="fg"><label>Counterparty name *</label><input type="text" id="f_cp" placeholder="e.g. Acme Corp" value="${d.counterparty||''}"></div>
+    <div class="frow2">
+      <div class="fg"><label>Signer name *</label><input type="text" id="f_signer" placeholder="e.g. Jane Smith" value="${d.signer||''}"></div>
+      <div class="fg"><label>Signer title</label><input type="text" id="f_signerTitle" placeholder="e.g. CEO" value="${d.signerTitle||''}"></div>
+    </div>
+    <div class="fg"><label>Signer email</label><input type="email" id="f_signerEmail" placeholder="e.g. jane@acme.com" value="${d.signerEmail||''}"></div>
+    <div class="fg"><label>Counterparty address</label><textarea id="f_addr" placeholder="e.g. 123 Main St, New York, NY 10001">${d.counterpartyAddress||''}</textarea></div>
+    <div class="section-title">Agreement terms</div>
+    <div class="frow2">
+      <div class="fg"><label>Effective date *</label><input type="date" id="f_eff" value="${d.effective||''}"></div>
+      <div class="fg"><label>Termination date</label><input type="date" id="f_term" value="${d.termination||''}"></div>
+    </div>
+    <div class="fg"><label>Governing law</label><input type="text" id="f_gov" placeholder="e.g. Delaware" value="${d.govLaw||'Delaware'}"></div>
+    <div class="section-title">CorpTeam details</div>
+    <div class="fg"><label>CorpTeam signatory</label><input type="text" id="f_corpSig" placeholder="Trevor Dutcher" value="${d.corpSig||'Trevor Dutcher'}"></div>
+    <div class="section-title">Admin</div>
+    <div class="fg"><label>Contract name *</label><input type="text" id="f_name" placeholder="e.g. Acme Corp NDA" value="${d.name||''}"></div>
     <div class="fg"><label>Status</label><select id="f_status">
-      <option value="review" ${d.status==='review'?'selected':''}>Under review</option>
+      <option value="review" ${(!d.status||d.status==='review')?'selected':''}>Under review</option>
       <option value="draft" ${d.status==='draft'?'selected':''}>Draft</option>
     </select></div>`;
 }
 
 function collectIntake(){
   return {
-    counterparty:document.getElementById('f_cp').value,
-    signer:document.getElementById('f_signer').value,
+    counterparty:document.getElementById('f_cp').value.trim(),
+    signer:document.getElementById('f_signer').value.trim(),
+    signerTitle:document.getElementById('f_signerTitle').value.trim(),
+    signerEmail:document.getElementById('f_signerEmail').value.trim(),
+    counterpartyAddress:document.getElementById('f_addr').value.trim(),
     effective:document.getElementById('f_eff').value,
     termination:document.getElementById('f_term').value,
-    govLaw:document.getElementById('f_gov').value,
-    name:document.getElementById('f_name').value||'Untitled contract',
+    govLaw:document.getElementById('f_gov').value.trim(),
+    corpSig:document.getElementById('f_corpSig').value.trim()||'Trevor Dutcher',
+    name:document.getElementById('f_name').value.trim()||'Untitled NDA',
     status:document.getElementById('f_status').value,
   };
 }
 
+// ── THIRD PARTY FLOW ─────────────────────────────────────────────
 function openThird(){
-  S.uploadedFileName=null;S.uploadedFileData=null;
+  S.uploadedFileName=null;
   document.getElementById('mTitle').textContent='Upload third party contract';
   showThirdStep1();
   document.getElementById('modalWrap').classList.add('show');
@@ -368,13 +292,13 @@ function openThird(){
 function showThirdStep1(){
   document.getElementById('mBody').innerHTML=`
     <p style="font-size:13px;color:var(--txt2)">Upload the counterparty's contract. Claude will read it and autofill the intake form.</p>
-    <div class="uz ${S.uploadedFileName?'done':''}" id="uz" onclick="document.getElementById('fi').click()">
+    <div class="uz ${S.uploadedFileName?'done':''}" onclick="document.getElementById('fi').click()">
       <input type="file" id="fi" accept=".pdf,.doc,.docx" style="display:none" onchange="handleThirdFile(event)">
       <i class="ti ${S.uploadedFileName?'ti-circle-check':'ti-cloud-upload'}" aria-hidden="true"></i>
       <span>${S.uploadedFileName||'Click to upload PDF or Word file'}</span>
       ${S.uploadedFileName?'<span style="font-size:11px">Click to change</span>':''}
     </div>
-    ${S.uploadedFileName?'<div class="banner ai"><i class="ti ti-sparkles" aria-hidden="true"></i><span>Ready — click Next to autofill intake form with AI extraction</span></div>':''}`;
+    ${S.uploadedFileName?'<div class="banner ai"><i class="ti ti-sparkles" aria-hidden="true"></i><span>Ready — click Next to extract key terms with AI</span></div>':''}`;
   document.getElementById('mFt').innerHTML=`
     <button class="btn" onclick="closeModal()">Cancel</button>
     <button class="btn primary" onclick="runExtraction()" ${S.uploadedFileName?'':'disabled'}>Next — autofill form</button>`;
@@ -385,70 +309,254 @@ function handleThirdFile(e){const f=e.target.files[0];if(!f)return;S.uploadedFil
 function runExtraction(){
   document.getElementById('mBody').innerHTML=`
     <div class="banner ai"><div class="spin"></div><span>Reading contract and extracting key terms…</span></div>
-    <div style="opacity:.35;pointer-events:none">${intakeFields()}</div>`;
+    <div style="opacity:.3;pointer-events:none">${intakeHTML()}</div>`;
   document.getElementById('mFt').innerHTML=`<button class="btn" onclick="closeModal()">Cancel</button><button class="btn primary" disabled>Extracting…</button>`;
+  // Simulate AI extraction
   setTimeout(()=>{
-    const extracted={counterparty:'Acme Services LLC',signer:'Jennifer Walsh',effective:'2024-09-01',termination:'2027-08-31',govLaw:'New York',name:'Acme Services LLC — Agreement',status:'review'};
+    const extracted={counterparty:'Acme Services LLC',signer:'Jennifer Walsh',signerTitle:'General Counsel',signerEmail:'j.walsh@acmeservices.com',counterpartyAddress:'100 Commerce Blvd, Austin, TX 78701',effective:'2024-09-01',termination:'2029-08-31',govLaw:'New York',corpSig:'Trevor Dutcher',name:'Acme Services LLC — NDA',status:'review'};
     document.getElementById('mBody').innerHTML=`
-      <div class="banner ai"><i class="ti ti-sparkles" aria-hidden="true"></i><span>Fields autofilled — please review and correct if needed</span></div>
-      ${intakeFields(extracted)}`;
+      <div class="banner ai"><i class="ti ti-sparkles" aria-hidden="true"></i><span>Fields autofilled from contract — please review and correct if needed</span></div>
+      ${intakeHTML(extracted)}`;
     document.getElementById('mFt').innerHTML=`<button class="btn" onclick="closeModal()">Cancel</button><button class="btn primary" onclick="saveContract('third')"><i class="ti ti-check"></i> Save contract</button>`;
   },2200);
 }
 
+// ── OUR PAPER FLOW ────────────────────────────────────────────────
 function openOur(){
-  S.uploadedFileName=null;S.uploadedFileData=null;
-  document.getElementById('mTitle').textContent='Create from our template';
-  showOurStep1();
-  document.getElementById('modalWrap').classList.add('show');
-}
-
-function showOurStep1(){
+  S.uploadedFileName=null;
+  document.getElementById('mTitle').textContent='New NDA — CorpTeam template';
   document.getElementById('mBody').innerHTML=`
-    <p style="font-size:13px;color:var(--txt2)">Upload your template. Intake form fields will be merged into it on download.</p>
-    <div class="uz ${S.uploadedFileName?'done':''}" id="uz2" onclick="document.getElementById('fi2').click()">
-      <input type="file" id="fi2" accept=".pdf,.doc,.docx" style="display:none" onchange="handleTplFile(event)">
-      <i class="ti ${S.uploadedFileName?'ti-circle-check':'ti-template'}" aria-hidden="true"></i>
-      <span>${S.uploadedFileName||'Upload your template (PDF or Word)'}</span>
-      ${S.uploadedFileName?'<span style="font-size:11px">Click to change</span>':''}
-    </div>
-    ${S.uploadedFileName?'<div class="banner info"><i class="ti ti-check" aria-hidden="true"></i><span>Template ready — fill in the intake form to generate the contract</span></div>':''}`;
+    <div class="banner info"><i class="ti ti-file-text" aria-hidden="true"></i><span>Using <strong>CorpTeam, Inc. Mutual NDA template</strong>. Fill in the details below and download as a merged Word document.</span></div>
+    ${intakeHTML()}`;
   document.getElementById('mFt').innerHTML=`
     <button class="btn" onclick="closeModal()">Cancel</button>
-    <button class="btn primary" onclick="showOurIntake()" ${S.uploadedFileName?'':'disabled'}>Next — fill intake form</button>`;
-}
-
-function handleTplFile(e){const f=e.target.files[0];if(!f)return;S.uploadedFileName=f.name;showOurStep1();}
-
-function showOurIntake(){
-  document.getElementById('mBody').innerHTML=`
-    <div class="banner info"><i class="ti ti-info-circle" aria-hidden="true"></i><span>Fields below will be merged into <strong>${S.uploadedFileName}</strong> when you download</span></div>
-    ${intakeFields()}`;
-  document.getElementById('mFt').innerHTML=`<button class="btn" onclick="closeModal()">Cancel</button><button class="btn primary" onclick="saveContract('our')"><i class="ti ti-check"></i> Save contract</button>`;
+    <button class="btn primary" onclick="saveContract('our')"><i class="ti ti-check"></i> Save contract</button>`;
+  document.getElementById('modalWrap').classList.add('show');
 }
 
 function saveContract(type){
   const d=collectIntake();
-  S.contracts.push({id:S.nextId++,...d,type,executed:false,file:S.uploadedFileName});
+  if(!d.counterparty||!d.signer||!d.effective){showToast('Please fill in required fields (*)');return;}
+  S.contracts.push({id:S.nextId++,...d,type,executed:false,file:type==='third'?S.uploadedFileName:null});
   S.view='ip';closeModal();render();showToast('Contract saved to In progress');
 }
 
 function editIntake(id){
   const c=S.contracts.find(x=>x.id===id);if(!c||c.executed)return;
-  S.editId=id;
   document.getElementById('mTitle').textContent='Edit contract details';
-  document.getElementById('mBody').innerHTML=intakeFields(c);
+  document.getElementById('mBody').innerHTML=intakeHTML(c);
   document.getElementById('mFt').innerHTML=`<button class="btn" onclick="closeModal()">Cancel</button><button class="btn primary" onclick="updateContract(${id})"><i class="ti ti-check"></i> Save changes</button>`;
   document.getElementById('modalWrap').classList.add('show');
 }
 
 function updateContract(id){
   const c=S.contracts.find(x=>x.id===id);if(!c)return;
-  const d=collectIntake();Object.assign(c,d);
-  closeModal();openDetail(id);render();showToast('Contract updated');
+  const d=collectIntake();if(!d.counterparty||!d.signer||!d.effective){showToast('Please fill in required fields (*)');return;}
+  Object.assign(c,d);closeModal();openDetail(id);render();showToast('Contract updated');
 }
 
 function closeModal(){document.getElementById('modalWrap').classList.remove('show');S.uploadedFileName=null;render();}
+
+// ── DOWNLOADS ─────────────────────────────────────────────────────
+async function downloadContract(id,e){
+  e&&e.stopPropagation();
+  const c=S.contracts.find(x=>x.id===id);if(!c)return;
+  if(c.executed){downloadPDF(c);}else{await downloadWord(c);}
+}
+
+function downloadPDF(c){
+  const html=buildPDFHTML(c);
+  const w=window.open('','_blank');
+  w.document.write(html);w.document.close();
+  setTimeout(()=>{w.focus();w.print();},600);
+  showToast('PDF ready — use Print → Save as PDF in your browser');
+}
+
+function buildPDFHTML(c){
+  return `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>${c.name}</title>
+<style>
+body{font-family:Georgia,serif;max-width:720px;margin:0 auto;padding:40px;color:#1a1a1a;font-size:10pt;line-height:1.6}
+h1{font-size:14pt;text-align:center;margin-bottom:4px}
+.subtitle{text-align:center;font-size:10pt;color:#555;margin-bottom:24px}
+.executed-badge{display:inline-block;background:#EAF3DE;color:#3B6D11;font-size:9pt;padding:2px 12px;border-radius:10px;font-weight:600;margin:0 auto 20px;display:block;width:fit-content}
+.meta{background:#f9f9f9;border:1px solid #e0e0e0;border-radius:6px;padding:16px 20px;margin-bottom:24px}
+.meta table{width:100%;border-collapse:collapse}
+.meta td{padding:4px 0;font-size:9.5pt}
+.meta td:first-child{color:#777;width:160px;font-weight:600}
+.body-text{font-size:9.5pt;line-height:1.7;white-space:pre-wrap;text-align:justify}
+.sig-section{margin-top:40px;page-break-inside:avoid}
+.sig-table{width:100%;border-collapse:collapse;margin-top:16px}
+.sig-table td{vertical-align:top;padding:6px 0;font-size:9.5pt;width:50%}
+.sig-label{font-weight:600;font-size:9pt;color:#555;border-bottom:1px solid #ddd;padding-bottom:4px;margin-bottom:8px}
+.sig-line{border-bottom:1px solid #888;margin:20px 0 6px;height:1px}
+.footer{margin-top:40px;padding-top:12px;border-top:1px solid #e0e0e0;font-size:8pt;color:#aaa;text-align:center}
+@media print{body{padding:20px}.footer{position:fixed;bottom:20px;left:0;right:0;text-align:center}}
+</style></head><body>
+<h1>MUTUAL NON-DISCLOSURE AGREEMENT</h1>
+<div class="subtitle">CorpTeam, Inc. — Executed Agreement</div>
+<div class="executed-badge">✓ Executed</div>
+<div class="meta"><table>
+<tr><td>Counterparty</td><td>${c.counterparty||'—'}</td></tr>
+<tr><td>Counterparty signer</td><td>${c.signer||'—'}${c.signerTitle?', '+c.signerTitle:''}</td></tr>
+<tr><td>Signer email</td><td>${c.signerEmail||'—'}</td></tr>
+<tr><td>Counterparty address</td><td>${(c.counterpartyAddress||'—').replace(/\n/g,'<br>')}</td></tr>
+<tr><td>Effective date</td><td>${fmtDate(c.effective)}</td></tr>
+<tr><td>Termination date</td><td>${fmtDate(c.termination)}</td></tr>
+<tr><td>Governing law</td><td>State of ${c.govLaw||'Delaware'}</td></tr>
+<tr><td>CorpTeam signatory</td><td>${c.corpSig||'Trevor Dutcher'}, Founder, CEO</td></tr>
+${c.file?`<tr><td>Original file</td><td>${c.file}</td></tr>`:''}
+</table></div>
+<div class="body-text">${getNDABody(c)}</div>
+<div class="sig-section">
+<table class="sig-table"><tr>
+<td style="padding-right:30px">
+<div class="sig-label">COMPANY: CorpTeam, Inc.</div>
+<div class="sig-line"></div>
+<div>By: <strong>${c.corpSig||'Trevor Dutcher'}</strong></div>
+<div>Title: Founder, CEO</div>
+<div>Email: trevor@trevordutcher.com</div>
+<div style="margin-top:6px">Address: 2702 Derby Drive<br>San Ramon, California 94583</div>
+</td>
+<td style="padding-left:30px">
+<div class="sig-label">OTHER SIGNATORY: ${c.counterparty||'[Counterparty]'}</div>
+<div class="sig-line"></div>
+<div>By: <strong>${c.signer||'[Counterparty Signature]'}</strong></div>
+<div>Title: ${c.signerTitle||'—'}</div>
+<div>Email: ${c.signerEmail||'—'}</div>
+<div style="margin-top:6px">Address: ${(c.counterpartyAddress||'—').replace(/\n/g,'<br>')}</div>
+</td>
+</tr></table>
+</div>
+<div class="footer">Generated ${new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})} — CorpTeam, Inc. Contracts</div>
+</body></html>`;
+}
+
+function getNDABody(c){
+  const cp=c.counterparty||'[Other Signatory]';
+  const gov=c.govLaw||'Delaware';
+  const eff=fmtDate(c.effective);
+  const term=fmtDate(c.termination);
+  return `This Mutual Non-Disclosure Agreement (this "Agreement") is entered into between CorpTeam, Inc., a Delaware corporation ("Company") and ${cp} ("Other Signatory") as of ${eff} (the "Effective Date"), to protect the confidentiality of certain confidential information of Company or of Other Signatory to be disclosed under this Agreement solely for use in evaluating or pursuing a business relationship between the parties (the "Permitted Use").
+
+1. CONFIDENTIAL INFORMATION
+As used herein, the "Confidential Information" of a Party will mean any and all technical and non-technical information disclosed by or on behalf of such Party to the other Party, whether before or after the Effective Date, whether in oral, written, graphic, visual, electronic or other form.
+
+2. OBLIGATIONS
+Subject to Section 3, the Receiving Party agrees that at all times and notwithstanding any termination or expiration of this Agreement it will hold in strict confidence and not disclose to any third party any Confidential Information of the Disclosing Party, except as approved in writing by the Disclosing Party, and will use the Confidential Information of the Disclosing Party for no purpose other than the Permitted Use.
+
+3. EXCEPTIONS
+The Receiving Party will not have any obligations under this Agreement with respect to a specific portion of the Confidential Information if such portion: (a) was in the public domain at the time it was disclosed; (b) entered the public domain through no fault of the Receiving Party; (c) was in the Receiving Party's possession free of any obligation of confidence; (d) was rightfully communicated to the Receiving Party by a third party free of any obligation of confidence; or (e) was developed by employees or agents of the Receiving Party who had no access to any Confidential Information.
+
+4. TERM
+This Agreement will terminate on ${term}, or may be terminated by either Party at any time upon 30 days' prior written notice to the other Party. Each Party's obligations under this Agreement will survive termination and continue for a period of seven years from the date of expiration or termination.
+
+5. GOVERNING LAW
+This Agreement and any action related thereto will be governed, controlled, interpreted, and defined by and under the laws of the State of ${gov}, without giving effect to any conflicts of laws principles that require the application of the law of a different state.
+
+6. ENTIRE AGREEMENT
+This Agreement is the final, complete and exclusive agreement of the Parties with respect to the subject matters hereof and supersedes all prior discussions between the Parties with respect to such subject matters. No modification of or amendment to this Agreement will be effective unless in writing and signed by the Party to be charged.`;
+}
+
+async function downloadWord(c){
+  if(typeof docx==='undefined'){showToast('Word library not loaded — check your internet connection');return;}
+  try{
+    const {Document,Packer,Paragraph,TextRun,Table,TableRow,TableCell,WidthType,BorderStyle,AlignmentType,HeadingLevel,UnderlineType}=docx;
+    const noborder={style:BorderStyle.NONE,size:0,color:'FFFFFF'};
+    const borders={top:noborder,bottom:noborder,left:noborder,right:noborder};
+    const cp=c.counterparty||'[Other Signatory]';
+    const gov=c.govLaw||'Delaware';
+    const eff=fmtDate(c.effective);
+    const term=fmtDate(c.termination);
+    const corpSig=c.corpSig||'Trevor Dutcher';
+
+    function para(text,opts={}){
+      return new Paragraph({alignment:opts.center?AlignmentType.CENTER:opts.justify?AlignmentType.JUSTIFIED:AlignmentType.LEFT,
+        spacing:{after:opts.after||160,before:opts.before||0},
+        children:[new TextRun({text,bold:!!opts.bold,size:opts.size||20,font:'Arial',italics:!!opts.italic,underline:opts.underline?{type:UnderlineType.SINGLE}:undefined})]});
+    }
+    function emptyPara(){return new Paragraph({children:[new TextRun({text:'',size:20,font:'Arial'})],spacing:{after:80}});}
+    function sigRow(label1,val1,label2,val2){
+      const cell=(label,val)=>new TableCell({borders,width:{size:4680,type:WidthType.DXA},margins:{top:60,bottom:60,left:0,right:120},children:[
+        new Paragraph({children:[new TextRun({text:label,bold:true,size:18,font:'Arial',color:'555555'})],spacing:{after:40}}),
+        new Paragraph({children:[new TextRun({text:val,size:20,font:'Arial'})],spacing:{after:80}}),
+      ]});
+      return new TableRow({children:[cell(label1,val1),cell(label2,val2)]});
+    }
+
+    const introText=`This Mutual Non-Disclosure Agreement (this "Agreement") is entered into between CorpTeam, Inc., a Delaware corporation ("Company") and ${cp} ("Other Signatory") as of ${eff} (the "Effective Date"), to protect the confidentiality of certain confidential information of Company or of Other Signatory to be disclosed under this Agreement solely for use in evaluating or pursuing a business relationship between the parties (the "Permitted Use"). Company and Other Signatory may be referred to in this Agreement individually as a "Party" and collectively as the "Parties."`;
+
+    const sections_content=[
+      {title:'1. Confidential Information',body:`As used herein, the "Confidential Information" of a Party will mean any and all technical and non-technical information disclosed by or on behalf of such Party (the "Disclosing Party") to the other Party (the "Receiving Party"), whether before or after the Effective Date, whether in oral, written, graphic, visual, electronic or other form.`},
+      {title:'2. Obligations of Receiving Party',body:`Subject to Section 3, the Receiving Party agrees that at all times and notwithstanding any termination or expiration of this Agreement it will hold in strict confidence and not disclose to any third party any Confidential Information of the Disclosing Party, except as approved in writing by the Disclosing Party, and will use the Confidential Information of the Disclosing Party for no purpose other than the Permitted Use. The Receiving Party will protect such Confidential Information with at least the same degree of care that the Receiving Party uses to protect its own Confidential Information, but in no case, less than reasonable care.`},
+      {title:'3. Exceptions',body:`The Receiving Party will not have any obligations under this Agreement with respect to a specific portion of the Confidential Information if such Receiving Party can demonstrate with competent written evidence that such portion: (a) was in the public domain at the time it was disclosed to the Receiving Party; (b) entered the public domain through no fault of the Receiving Party; (c) was in the Receiving Party's possession free of any obligation of confidence at the time it was disclosed; (d) was rightfully communicated to the Receiving Party by a third party free of any obligation of confidence; or (e) was developed by employees or agents of the Receiving Party who had no access to any Confidential Information.`},
+      {title:'4. Compelled Disclosure',body:`Notwithstanding the above, the Receiving Party may disclose certain Confidential Information of the Disclosing Party to the extent such disclosure is required by a valid order of a court or other governmental body having jurisdiction or is otherwise required by law or regulation, provided that the Receiving Party provides the Disclosing Party with reasonable prior written notice of such required disclosure.`},
+      {title:'5. Return or Destruction of Information',body:`Upon termination or expiration of this Agreement, or upon written request of the Disclosing Party, the Receiving Party will promptly, at the Disclosing Party's election, return to the Disclosing Party or destroy all documents and other tangible materials representing the Disclosing Party's Confidential Information in the possession of the Receiving Party.`},
+      {title:'6. No License',body:`Confidential Information is and will remain the sole property of the Disclosing Party. Nothing contained in this Agreement will be construed as granting any property rights, by license or otherwise, to any Confidential Information of the Disclosing Party.`},
+      {title:'7. Term',body:`This Agreement will terminate on ${term}, or may be terminated by either Party at any time upon 30 days' prior written notice to the other Party. Each Party's obligations under this Agreement will survive termination or expiration of this Agreement and continue for a period of seven years from the date of such expiration or termination.`},
+      {title:'8. Disclaimer',body:`The Disclosing Party is providing Confidential Information on an "AS IS" basis for use by the Receiving Party at its own risk. THE DISCLOSING PARTY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT OF THIRD PARTY RIGHTS, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE.`},
+      {title:'9. Governing Law',body:`This Agreement and any action related thereto will be governed, controlled, interpreted, and defined by and under the laws of the State of ${gov}, without giving effect to any conflicts of laws principles that require the application of the law of a different state.`},
+      {title:'10. Entire Agreement',body:`This Agreement is the final, complete and exclusive agreement of the Parties with respect to the subject matters hereof and supersedes all prior discussions between the Parties with respect to such subject matters. No modification of or amendment to this Agreement will be effective unless in writing and signed by the Party to be charged.`},
+    ];
+
+    const sigLineStyle={border:{bottom:{style:BorderStyle.SINGLE,size:6,color:'333333',space:1}}};
+    const sigBlank=(label)=>new TableCell({borders,width:{size:4320,type:WidthType.DXA},margins:{top:60,bottom:60,left:0,right:200},children:[
+      new Paragraph({...sigLineStyle,children:[new TextRun({text:' ',size:20,font:'Arial'})],spacing:{after:60}}),
+      new Paragraph({children:[new TextRun({text:label,size:18,font:'Arial',color:'777777',italics:true})],spacing:{after:80}}),
+    ]});
+
+    const doc=new Document({
+      styles:{default:{document:{run:{font:'Arial',size:20}}}},
+      sections:[{
+        properties:{page:{size:{width:12240,height:15840},margin:{top:1440,right:1440,bottom:1440,left:1440}}},
+        children:[
+          para('MUTUAL NON-DISCLOSURE AGREEMENT',{bold:true,center:true,size:28,after:120}),
+          para('CorpTeam, Inc.',{bold:true,center:true,size:22,after:40}),
+          para(`Effective Date: ${eff}`,{center:true,size:20,after:360,italic:true}),
+          new Paragraph({children:[new TextRun({text:introText,size:20,font:'Arial'})],alignment:AlignmentType.JUSTIFIED,spacing:{after:240}}),
+          ...sections_content.flatMap(s=>[
+            new Paragraph({children:[new TextRun({text:s.title,bold:true,size:22,font:'Arial'})],spacing:{before:240,after:120}}),
+            new Paragraph({children:[new TextRun({text:s.body,size:20,font:'Arial'})],alignment:AlignmentType.JUSTIFIED,spacing:{after:160}}),
+          ]),
+          emptyPara(),
+          para('SIGNATURE PAGE',{bold:true,center:true,size:22,after:240,before:240}),
+          para('The parties have executed this Non-Disclosure Agreement as of the Effective Date.',{center:true,after:320}),
+          new Table({width:{size:9360,type:WidthType.DXA},columnWidths:[4680,4680],rows:[
+            new TableRow({children:[
+              new TableCell({borders,width:{size:4680,type:WidthType.DXA},margins:{top:60,bottom:60,left:0,right:200},children:[
+                new Paragraph({children:[new TextRun({text:'COMPANY:',bold:true,size:20,font:'Arial'})],spacing:{after:120}}),
+                new Paragraph({children:[new TextRun({text:'CorpTeam, Inc.',bold:true,size:20,font:'Arial'})],spacing:{after:200}}),
+                new Paragraph({...sigLineStyle,children:[new TextRun({text:' ',size:20,font:'Arial'})],spacing:{after:60}}),
+                new Paragraph({children:[new TextRun({text:'By: '+corpSig,size:20,font:'Arial'})],spacing:{after:80}}),
+                new Paragraph({children:[new TextRun({text:'Name: Trevor Dutcher',size:20,font:'Arial'})],spacing:{after:80}}),
+                new Paragraph({children:[new TextRun({text:'Title: Founder, CEO',size:20,font:'Arial'})],spacing:{after:80}}),
+                new Paragraph({children:[new TextRun({text:'Email: trevor@trevordutcher.com',size:20,font:'Arial'})],spacing:{after:80}}),
+                new Paragraph({children:[new TextRun({text:'Address: 2702 Derby Drive',size:20,font:'Arial'})],spacing:{after:40}}),
+                new Paragraph({children:[new TextRun({text:'San Ramon, California 94583',size:20,font:'Arial'})],spacing:{after:80}}),
+              ]}),
+              new TableCell({borders,width:{size:4680,type:WidthType.DXA},margins:{top:60,bottom:60,left:200,right:0},children:[
+                new Paragraph({children:[new TextRun({text:'OTHER SIGNATORY:',bold:true,size:20,font:'Arial'})],spacing:{after:120}}),
+                new Paragraph({children:[new TextRun({text:cp,bold:true,size:20,font:'Arial'})],spacing:{after:200}}),
+                new Paragraph({...sigLineStyle,children:[new TextRun({text:' ',size:20,font:'Arial'})],spacing:{after:60}}),
+                new Paragraph({children:[new TextRun({text:'By: '+(c.signer||'[Counterparty Signature]'),size:20,font:'Arial'})],spacing:{after:80}}),
+                new Paragraph({children:[new TextRun({text:'Name: '+(c.signer||'[Counterparty Signer Name]'),size:20,font:'Arial'})],spacing:{after:80}}),
+                new Paragraph({children:[new TextRun({text:'Title: '+(c.signerTitle||'[Title]'),size:20,font:'Arial'})],spacing:{after:80}}),
+                new Paragraph({children:[new TextRun({text:'Email: '+(c.signerEmail||'[Email]'),size:20,font:'Arial'})],spacing:{after:80}}),
+                new Paragraph({children:[new TextRun({text:'Address: '+(c.counterpartyAddress||'[Address]'),size:20,font:'Arial'})],spacing:{after:80}}),
+              ]}),
+            ]}),
+          ]}),
+          emptyPara(),
+          para(`Generated ${new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})} — CorpTeam, Inc. Contracts`,{center:true,size:16,italic:true}),
+        ]
+      }]
+    });
+    const blob=await Packer.toBlob(doc);
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement('a');a.href=url;a.download=c.name.replace(/[^a-z0-9]/gi,'_')+'.docx';
+    document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);
+    showToast('Word document downloaded');
+  }catch(err){console.error(err);showToast('Download failed — please try again');}
+}
 
 render();
 </script>
